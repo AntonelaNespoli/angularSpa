@@ -1,0 +1,21 @@
+<div class="cardHeroes animated fadeIn fast">
+  <h1 class="nombreHeroe">{{heroe.nombre | uppercase}} -
+    <small>({{heroe.aparicion | date:'yyyy'}})</small>
+  </h1>
+  <div class="row">
+    <div class="col-md-4 colIzq">
+      <img class="img-fluid" [src]="heroe.img" [alt]="heroe.nombre">
+      <button class="btn btn-outline-danger btn-block btnRegresar" (click)="regresarHeroes()">Regresar</button>
+    </div>
+    <div class="col-md-8">
+      <h3 class="nombreHeroe">{{heroe.nombre}}</h3>
+      <p class="">{{heroe.bio}}</p>
+      <div>
+        <img *ngIf="heroe.casa == 'DC'" class="imgLogo" src="http://www.oconowocc.com/wp-content/uploads/2012/01/Dc-comics-logo.jpg"
+          alt="DC">
+        <img *ngIf="heroe.casa == 'Marvel'" class="imgLogo" src="http://vinylmationworld.com/VMworldmob/wordpress/wp-content/uploads/2017/06/Marvel-logo.jpg"
+          alt="Marvel">
+      </div>
+    </div>
+  </div>
+</div>

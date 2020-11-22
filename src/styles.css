@@ -1,1 +1,70 @@
-/* You can add global styles to this file, and also import other style files */
+/* estilos generales */
+body{
+  padding-bottom: 50px;
+}
+.main-container{
+    margin-top:10px;
+    padding: 0 30px;
+}
+@media (max-width : 600px) {
+  .card-columns{
+    column-count: 1;
+  }
+}
+@media (min-Width:600px){
+  .card-columns{
+    column-count: 2;
+  }
+}
+@media (min-Width:768px){
+  .card-columns{
+    column-count: 3;
+  }
+}
+
+/* pagina heroes*/
+.cardHeroes{
+  padding: 10px;
+}
+
+/* pagina heroe */
+.btnRegresar{
+  margin: 10px 5px;
+}
+.nombreHeroe{
+  padding-bottom: 10px;
+  border-bottom: rgba(128, 128, 128, 0.226) 2px solid;
+}
+
+.imgLogo{
+  width: 120px;
+}
+
+/* Animación de páginas */
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+
+  .fast {
+    -webkit-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  .fadeIn {
+    animation-name: fadeIn;
+  }
